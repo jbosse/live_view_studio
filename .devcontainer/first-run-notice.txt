@@ -1,0 +1,10 @@
+
+👋 Welcome to the Phoenix LiveView Tutorial Codespace!
+   - Setup the application by running: `mix setup`
+   - When that is finished run: `mix phx.server`
+
+Then if you then browse to http://localhost:4000 you should see a list of the LiveView projects we'll build. They won't do anything interesting just yet. 😉
+
+🔍 To explore VS Code to its fullest, search using the Command Palette (Cmd/Ctrl + Shift + P or F1).
+
+📝 Edit away, run your app as usual, and we'll automatically make it available for you to access.
