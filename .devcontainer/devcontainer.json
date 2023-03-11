@@ -4,6 +4,7 @@
 	"service": "app",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 	"forwardPorts": [4000, 5432],
+	"postCreateCommand": "./.devcontainer/welcome.sh",
 	"customizations": {
 		"vscode": {
 			"settings": {
