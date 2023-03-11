@@ -1,0 +1,59 @@
+{
+	"name": "Pragmatic Studio: Phoenix LiveView Tutorial 2nd Edition",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"forwardPorts": [4000, 5432],
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"terminal.integrated.profiles.linux": {
+					"bash": {
+						"path": "/bin/bash",
+						"icon": "terminal-bash"
+					}
+				},
+				"terminal.integrated.defaultProfile.linux": "bash",
+				"workbench.colorTheme": "Material Theme",
+				"sqltools.connections": [
+					{
+						"name": "Container database",
+						"driver": "PostgreSQL",
+						"previewLimit": 50,
+						"server": "localhost",
+						"port": 5432,
+						"database": "live_view_studio_2ed_dev",
+						"username": "postgres",
+						"password": "postgres"
+					},
+				],
+				"elixirLS.suggestSpecs": false,
+				"elixirLS.dialyzerEnabled": true,
+				"elixirLS.signatureAfterComplete": false,
+				"elixirLS.fetchDeps": false,
+				"files.associations": {
+					"*.heex": "phoenix-heex"
+				},
+				"[elixir]": {
+					"editor.formatOnSave": true,
+					"editor.defaultFormatter": "JakeBecker.elixir-ls"
+				},
+				"[phoenix-heex]": {
+					"editor.formatOnSave": true,
+					"editor.defaultFormatter": "JakeBecker.elixir-ls"
+				},
+				"emmet.includeLanguages": {
+					"elixir": "html",
+					"phoenix-heex": "html"
+				},
+				"emmet.triggerExpansionOnTab": true,
+			},
+			"extensions": [
+				"equinusocio.vsc-material-theme",
+				"jakebecker.elixir-ls",
+				"mtxr.sqltools",
+				"mtxr.sqltools-driver-pg"
+			]
+		}
+	}
+}
